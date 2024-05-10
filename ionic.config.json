@@ -1,0 +1,7 @@
+{
+  "name": "gymshare",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
