@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
 export class Tab2Page {
 
   constructor() {}
-
+  items = [{"value":1,"name":"1 day"},
+   {value: 2, "name":"2-3 days"},
+   {value:3,
+    "name":"5-6 days"},
+    {value:4, name:"7 days"}]
 }

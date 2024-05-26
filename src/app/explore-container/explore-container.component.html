@@ -1,4 +1,9 @@
 <div id="container">
-  <strong>{{ name }}</strong>
-  <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<h1>Add Workout plan</h1>
+<p>Add a plan to your workout for imroved results. CLick next to skip</p>
+
+<ion-card *ngFor="let item of items; let i = index"> 
+  <card-container name="Tab 1 page" [item]="item" ></card-container>
+</ion-card>
+ 
 </div>

@@ -1,0 +1,23 @@
+.iconEye {
+    font-size: 12px;
+    padding-left: 4px;
+    padding-top: 12px;
+    vertical-align: middle;
+}
+
+ion-item {
+    margin-bottom: 10px;
+    background: transparent;
+    border: 1px solid #eac402;
+    --highlight-height: 0px;
+    --highlight-color-valid: #eac402;
+    --highlight-color-focused: #eac402;
+    --highlight-color-invalid: #eac402;
+}
+.label {
+    display: flex;    
+    margin-top: -5%;
+}
+.label-text{
+    margin-left: 18%;
+}

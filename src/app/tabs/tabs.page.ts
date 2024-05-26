@@ -9,4 +9,9 @@ export class TabsPage {
 
   constructor() {}
 
+  goAnOtherPage(){
+
+  }
+  items = ["1 day", "2-3 days","5-6 days", "7 days"]
+
 }

@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="ellipsis-horizontal"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="content">
+  <div class="container">
+    <div class="icon-container">
+      <ion-icon name="home-outline" class="center-icon"></ion-icon>
+    </div>
+    <div class="buttons-container">
+      <ion-chip *ngFor="let goal of goals" class="goal-chip">
+        <ion-label>{{ goal }}</ion-label>
+      </ion-chip>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <div class="message-bar">
+    <ion-input placeholder="Message" class="message-input"></ion-input>
+    <ion-button fill="clear" class="send-button">
+      <ion-icon name="send"></ion-icon>
+    </ion-button>
+  </div>
+</ion-footer>

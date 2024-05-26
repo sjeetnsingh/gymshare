@@ -1,17 +1,69 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header></app-header>
+<ion-content [fullscreen]="true" class="content">
+  <div id="container">
+    <h1 class="title">How Often Do You Work Out?</h1>
+    <p class="subtitle">How many days in a week do you work out?</p>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">Tab 2</ion-title>
+      </ion-toolbar>
+    </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+    <ion-list radio-group class="radio-group">
+      <ion-item class="radio-item" *ngFor="let item of items; let i = index">
+        <ion-radio slot="start" value={item.value} class="radiobutton"></ion-radio>
+        <ion-label>{{item.name}}</ion-label>
+      </ion-item>
+     
+    </ion-list>
+  </div>
 </ion-content>
+
+<style>
+  #container {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 2em;
+    color: #3880ff;
+    margin-bottom: 10px;
+  }
+
+  .subtitle {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+  }
+
+  .radio-group {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 20px;
+  }
+
+  .radio-item {
+    --highlight-color-focused: #3880ff;
+    --highlight-color: #3880ff;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+  }
+
+  .radio-item:last-child {
+    border-bottom: none;
+  }
+
+  .radiobutton {
+    margin-right: 10px;
+  }
+
+  ion-label {
+    margin-left: 10px;
+  }
+</style>
